@@ -13,4 +13,5 @@ docker run -d --name django_server -p 5440:5432 -e POSTGRES_PASSWORD=test -e POS
 python3.11 manage.py migrate
 python3.11 manage.py runserver
 
-# sudo ln -s /usr/lib/python3/dist_packages/apt_pkg.cpython-310-x86_64-linux-gnu.so apt_pkg.so
+# sudo cd /usr/lib/python3/dist_packages
+# sudo ln -s /usr/lib/python3/dist_packages/apt_pkg.cpython-310-x86_64-linux-gnu.so /usr/lib/python3/dist_packages/apt_pkg.so
